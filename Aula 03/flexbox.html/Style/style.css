@@ -23,7 +23,7 @@ main{
     max-width: 400px;
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 20px #00000045 ;
+    box-shadow: 0px 0px 10px 20px #00000045;
     /* box-shadow:
     1- offset -x -> Deslocamento eixo X (Horizontal)
     2- offset - y -> Deslocamento eixo y (Vertical)
@@ -32,7 +32,7 @@ main{
     5 - Color -> Cor da somra #000000
     */
 }
-header{
+.perfil{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,12 +46,14 @@ header{
     outline-offset: -5px;
 }
 
-h1{
+h1
+{
     font-weight: 500;
     font-size: 35px;
     color: #ffffff;
 }
-header{
+header
+    {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,9 +64,10 @@ h3
     color: #6877e0;
     font-weight: 600;
 }
-h4{
-    font-size: 22px;
-    font-weight:500px;
+h4
+{
+    font-size: 18px;
+    font-weight:400px;
 }
 p
 {
@@ -75,10 +78,11 @@ p
 ul
 {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 
 }
-ul li{
+ul li
+{    
     list-style: none ;
     background-color: #f7fafc;
     outline: 2px solid #e2e8f0;
@@ -87,19 +91,22 @@ ul li{
     color: #6877e0;
 
 }
-button{
+button
+{
+    font-weight: 600;
     cursor: pointer;
     border-radius: 20px;
-    padding: 8px 25px;
+    border: 20px;
+    padding: 8px 20px;
     color: #ffffff;
     border: none;
-    box-shadow: 0px 0px 20px 10px #6876e055;
-    background: linear-gradient(90deg, rgba(105, 119, 224, 1) 56%, rgba(116, 82, 172, 1) 100%);
+    box-shadow: 0px 0px 10px 5px #6876e055;
+    background: linear-gradient(129deg, rgba(104, 119, 224, 1) 35%, rgba(116, 81, 171, 1) 100%);
     transition: background 3s ease;
 }
 
  button {
 
-    background: #000000;
+    background: #000000b0;
    
  }
