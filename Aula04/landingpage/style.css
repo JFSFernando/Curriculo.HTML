@@ -1,6 +1,8 @@
 /*css Reste */
 /*CSS Reset */
 
+/*CSS Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -48,13 +50,13 @@ body {
     line-height: 1.6;
 
 }
+
 h2 {
-    font-size: clamp(1.75rem, 3rem, 3.5rem);
-    font-weight: 700; 
-    line-height: 1.2;   
+    font-size: clamp(1.75rem, 3rem, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
     color: var(--cor-texto);
     margin-bottom: var(--espaco-lg);
-
 }
 
 .navbar {
@@ -283,7 +285,9 @@ h2 {
     gap: 4rem;
     align-items: center;
     max-width: 1280px;
-    margin: 0 auto;   
+    margin: 0 auto;
+ 
+    
 }
 
 .sobre-texto span {
@@ -293,7 +297,6 @@ h2 {
     letter-spacing: 2px;
     margin-bottom: var(--espaco-sm);
 }
-
 
 .sobre-paragrafo {
     font-size: 1.0625rem;
@@ -309,11 +312,12 @@ h2 {
     padding: var(--espaco-xl);
 }
 
-.sobre-pilares-titulo{
+.sobre-pilares-titulo {
     font-size: 1.375rem;
     font-weight: 700;
-    margin-bottom: var(--cor-texto);
+    color: var(--cor-texto);
     margin-bottom: var(--espaco-lg);
+
 }
 
 .pilares-lista {
@@ -322,7 +326,8 @@ h2 {
     flex-direction: column;
     gap: var(--espaco-md);
 }
-.pilar{
+
+.pilar {
     display: flex;
     align-items: start;
     gap: var(--espaco-sm);
@@ -333,6 +338,7 @@ h2 {
     background-color: color-mix(in srgb, var(--cor-primaria) 10%, transparent);
     padding: var(--espaco-xs);
     border-radius: var(--raio-sm);
+    /*Comentário*/
 }
 
 .pilar-titulo {
@@ -348,23 +354,24 @@ h2 {
     line-height: 1.5;
 }
 
-/* SOLUÇÕES ====================================================== */
- 
+/* SOLUÇÕES ===================================== */
+
 .solucoes {
     background-color: var(--cor-fundo-secundario);
     padding: var(--espaco-xxl) 0;
 }
- 
+
 .solucoes .container {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
- 
+
 .solucoes-header {
     text-align: center;
     margin-bottom: var(--espaco-xxl);
+
 }
- 
+
 .solucoes-descricao {
     text-align: center;
     font-size: 1.0625rem;
@@ -376,8 +383,8 @@ h2 {
 
 .cards-grid {
     display: grid;
-    /* auto-fill o grid cria quantas colunas couberem */
-    /* minmax(400px, 1fr) -> Cada coluna tem no mínimo 400px e no máximo 1fr (fração do espaço disponível) */
+    /*auto-fill: o grid cria quantas colunas couberem */
+    /*minmax(300px, 1fr): cada coluna tem no mínimo 400px e no máximo 1fr(distribui no espaço restante) */
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: var(--espaco-md);
 }
@@ -388,29 +395,98 @@ h2 {
     border-radius: var(--raio-lg);
     padding: var(--espaco-xl);
     transition: transform 0.2s ease;
+
 }
+
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 40px #00000020
-    
+    box-shadow: 0 12px 40px #00000020;
 }
+
 .card-icone {
     font-size: 2rem;
-    font-weight: 700; 
+    font-weight: 700;
     margin-bottom: var(--espaco-md);
-   
 }
+
 .card-titulo {
     font-size: 1.125rem;
     font-weight: 700;
     color: var(--cor-texto);
     margin-bottom: var(--espaco-xs);
 }
+
 .card-descricao {
     font-size: 0.9375rem;
     color: var(--cor-texto-suave);
     line-height: 1.7;
 }
+
+/* EQUIPE ===================================== */
+.equipe {
+    padding: var(--espaco-xxl) 0;
+}
+ 
+.container-equipe {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+ 
+.dados-equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--espaco-xl);
+    margin-top: var(--espaco-xxl);
+}
+ 
+.membro-equipe {
+    width: 100%;
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.avatar {
+    width: 112px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    border-radius: 50%;
+    margin-bottom: var(--espaco-md);
+    
+}
+.avatar:hover {
+    transform: scale(1.2);
+    transition: ease 0.3s;
+}
+
+.membro-cargo {
+    font-size: 0.875rem;
+    color: var(--cor-primaria);
+    font-weight: 600;
+    margin-bottom: var(--espaco-sm);
+}
+
+.membro-descricao {
+    font-size: 0.875rem;
+    color: var(--cor-texto-suave);
+    line-height: 1.5;
+    text-align: center;
+}
+ 
+
+
+
+
 
 
     
