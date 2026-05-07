@@ -211,7 +211,7 @@ h2 {
     border: none;
     color: var(--cor-branca);
     font-size: 1.07rem;
-    font-weight: 700;
+    font-weight:700;
     padding: 1rem 2rem;
     border-radius: var(--raio-md);
     cursor: pointer; /* Mãozinha aparecendo no botão */
@@ -481,6 +481,108 @@ h2 {
     color: var(--cor-texto-suave);
     line-height: 1.5;
     text-align: center;
+}
+
+.contato {
+    background: #f4f6fb;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.contato__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+}
+ 
+/* LADO ESQUERDO */
+.contato__info {
+    background: #1554c0;
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: start;
+}
+ 
+.contato__info h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+ 
+.contato__lista {
+    margin: 20px 0;
+    list-style: none;
+}
+ 
+.contato__lista li {
+    margin-bottom: 10px;
+}
+ 
+.contato__rodape {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+ 
+/* FORMULÁRIO */
+.contato__form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    text-align: start;
+}
+ 
+.form__linha {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+}
+ 
+.form__campo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+ 
+.form__campo label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #060606;
+    align-items:flex-start;
+    text-transform: uppercase;
+}
+ 
+.form__campo input,
+.form__campo textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+    outline: none;
+    align-items:flex-start;
+}
+ 
+textarea {
+    resize: none;
+}
+ 
+.btn-enviar {
+    width: 100%;
+    background: #1554c0;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font: 700;
+}
+ 
+.btn-enviar:hover {
+    background: #0f3f94;
 }
  
 
